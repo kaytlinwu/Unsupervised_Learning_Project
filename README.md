@@ -25,19 +25,20 @@ The ultimate goal of the project is to gain insights from the data sets and comm
 
 - Elbow method was performed and the optimal number of clusters was found to be 6. 
 - KMeans model was performed using 6 clusters. Results were plotted on 2 dimensions using PCA component 1 and PCA component 2.
-- 6 distinct clusters can be seen through the KMeans model. Overlap between cluster 1 (orange) and cluster 3 (red) can be seen. As plot is 2 dimensional, separation may occur past the 2nd dimension.
-- Overall KMeans clustering using 6 clusters represents the data well.
+- Overall the KMeans clustering provides good separation between all clusters except for cluster 1(orange) and 3(red).
 
 ### Hierarchical Clustering
 
-- Dendrogram was performed and the optimal number of clusterse was found to be 6.
-- Hierachical Clustering was also plotted on 2 dimensions using PCA component 1 and PCA component 2.
-- Compared to KMean, less distinct clusters are seen with hierarchical clustering. Clusters have more overlap between each other. 
+- Dendrogram was performed and the optimal number of clusters was found to be 6.
+- Hierarchical Clustering was performed using 6 clusters. Results were plotted on 2 dimensions using PCA component 1 and PCA component 2.
+- Compared to KMeans, Hierarchical Clustering provided more distinct separation between clusters.
 
 ### PCA Analysis
 - PCA analysis found that the first principal component contained 41% of the variance and the second principal component contained 17% of the variance. Together, these two components accounted for 58% of the variance.
+- Skree plot suggests that the optimal number of principal components is 4. 
 
 ## Conclusion/Further Directions
 - Wholesale data can be clustered into 6 distinct clusters. These clusters can be useful in grouping customer spending data and understanding customer yearly spending.
-- KMeans model performed better at forming distinct clusters compared to the Hierachical model.
+- Hierachical model performed better at forming distinct clusters compared to the KMeans model.
+- Future considerations for modelling would include reducing the PCA components from 6 (which was used for modelling in this notebook) to the optimal number of components, 4, and repeating the KMeans and Hierarchical Models.
 - Other clustering models could be explored in order to find which model best suits the data. 
